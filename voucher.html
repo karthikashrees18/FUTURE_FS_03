@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gift Voucher</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .voucher {
+            width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 3px dashed #ff6f00;
+            border-radius: 15px;
+            text-align: center;
+            background: #fff3e0;
+        }
+
+        .voucher h1 {
+            color: #ff6f00;
+        }
+
+        .voucher-code {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .print-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6f00;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="voucher">
+    <h1>🎁 Vasavi Tiffins</h1>
+    <h3>Gift Voucher</h3>
+
+    <p id="voucherAmount"></p>
+
+    <div class="voucher-code" id="voucherCode"></div>
+
+    <p>Valid for dine-in only</p>
+
+    <button class="print-btn" onclick="window.print()">Print Voucher</button>
+</div>
+
+<script>
+    document.getElementById("voucherAmount").innerText =
+        "Gift Amount: " + localStorage.getItem("giftAmount");
+
+    document.getElementById("voucherCode").innerText =
+        "Voucher Code: " + localStorage.getItem("giftCode");
+</script>
+
+</body>
+</html>

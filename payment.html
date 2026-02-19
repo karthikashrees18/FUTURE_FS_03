@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gift Card Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align:center; padding:50px;">
+
+    <h2>Gift Card Payment</h2>
+
+    <h3 id="amountDisplay"></h3>
+
+    <input type="text" placeholder="Your Name"><br><br>
+    <input type="text" placeholder="Phone Number"><br><br>
+    <input type="text" placeholder="Card Number (Demo Only)"><br><br>
+
+    <button onclick="fakePayment()">Pay Now</button>
+
+  
+    <script>
+    document.getElementById("amountDisplay").innerText =
+        "Amount: " + localStorage.getItem("giftAmount");
+
+    function fakePayment() {
+        let giftCode = "VT" + Math.floor(100000 + Math.random() * 900000);
+        localStorage.setItem("giftCode", giftCode);
+        window.location.href = "voucher.html";
+    }
+</script>
+
+
+</body>
+</html>
