@@ -81,17 +81,12 @@ This project demonstrates:
 
 ---
 
-## 📸 Preview
-
-(Add screenshots here after uploading your project images)
-
----
 
 ## 👨‍💻 Author
 
-Your Name  
-B.Tech Student  
-Frontend Developer  
+KARTHIKA SHREE S 
+INFORMATION SCIENCE AND ENGINEERING STUDENT
+ 
 
 ---
 
