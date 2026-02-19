@@ -6,6 +6,15 @@ This project showcases a modern restaurant landing page with menu display, gift 
 
 ---
 
+## 🚀 Live Website
+
+🔗 Live Demo: https://karthikashrees18.github.io/FUTURE_FS_03/  
+🔗 GitHub Repository: https://github.com/karthikashrees18/FUTURE_FS_03 
+
+
+
+---
+
 ## 🚀 Features
 
 ✅ Responsive Hero Section  
